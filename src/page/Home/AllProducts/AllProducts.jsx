@@ -1,15 +1,32 @@
+import { useEffect, useState } from "react";
 import ProductCard from "../../../components/Navbar/ProductCard/ProductCard";
+import Sidebar from "../../../components/Navbar/Sidebar/Sidebar";
+import axios from "axios";
 
 
 const AllProducts = () => {
+    const [products,setProducts] = useState([]);
+
+    useEffect(()=>{
+        getData();
+    },[])
+
+    const getData = async()=>{
+        const {data} = await axios(`${import.meta.env.VITE_API_URL}/all-products`,{withCredentials:true})
+        // console.log(data);
+        setProducts(data);
+    }
     return (
-        <div className="container mx-auto">
-            <div className="text-2xl md:text-4xl text-[#64e2b0] font-bold font-poppins flex justify-center items-center mt-6 mb-10">
-                <h1>“Hot Selling Products”</h1>
+        <div className="container mx-auto flex gap-6">
+            {/* sidebar */}
+            <Sidebar/>
+            
+            <div className="grid grid-cols-3 gap-3">
+            {
+                products.map(product=><ProductCard key={product._id} product={product}/>)
+            }
             </div>
-            <div className="mt-12">
-            <ProductCard/>
-            </div>
+            
         </div>
     );
 };
