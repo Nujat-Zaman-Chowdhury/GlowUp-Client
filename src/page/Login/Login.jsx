@@ -43,7 +43,7 @@ const Login = () => {
         }
       }
     return (
-        <div className="w-full h-screen bg-[url('login.jpg')] bg-cover bg-center flex justify-center items-center">
+        <div className="w-full h-[100vh] bg-[url('login.jpg')] bg-cover bg-center flex justify-center items-center">
             <div className="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
 	<h1 className="text-2xl font-bold text-center text-[#222222]">Login</h1>
 	<form noValidate="" action="" className="space-y-6" onSubmit={handleSubmit}>
