@@ -37,12 +37,15 @@ const Navbar = () => {
 
       </ul>
     </div>
-    <Link to="/" className="flex-1">
-             <span className="btn border-0 shadow-none bg-gradient-to-r from-[#b657a6] to-[#aeffde] text-transparent bg-clip-text text-xl md:text-3xl font-bold">GlowUp</span> </Link>
+    {/* <Link to="/" className="flex-1">
+             <span className="btn border-0 shadow-none bg-gradient-to-r from-[#b657a6] to-[#aeffde] text-transparent bg-clip-text text-xl md:text-3xl font-bold">GlowUp</span> </Link> */}
+    <div className="w-[130px] h-[100px] rounded-full">
+        <img src="logoimage.png" className="w-full h-full" alt="Glow Up"/>
+    </div>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-    <li><Link className="relative group">Home
+    <ul className="menu menu-horizontal px-1 font-poppins">
+    <li className=""><Link className="relative group ">Home
         <span className="absolute -bottom-1 left-0 w-0 h-1 bg-gradient-to-r from-[#b657a6] to-[#aeffde] transition-all group-hover:w-full"></span>
         </Link></li>
         <li><Link className="relative group">Shop

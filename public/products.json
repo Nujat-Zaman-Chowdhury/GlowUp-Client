@@ -1,0 +1,354 @@
+
+[
+  {
+    "productName": "Hydrating Face Cream",
+    "image": "https://via.placeholder.com/150",
+    "description": "A lightweight, hydrating cream that leaves skin feeling smooth and refreshed.",
+    "price": 25.99,
+    "category": "Skincare",
+    "ratings": 4.5,
+    "creationDate": "2024-08-01T09:15:00Z"
+  },
+  {
+    "productName": "Anti-Aging Serum",
+    "image": "https://via.placeholder.com/150",
+    "description": "A powerful serum that reduces fine lines and wrinkles.",
+    "price": 45.50,
+    "category": "Skincare",
+    "ratings": 4.8,
+    "creationDate": "2024-08-02T11:20:00Z"
+  },
+  {
+    "productName": "Brightening Eye Cream",
+    "image": "https://via.placeholder.com/150",
+    "description": "An eye cream that helps reduce dark circles and puffiness.",
+    "price": 30.00,
+    "category": "Skincare",
+    "ratings": 4.3,
+    "creationDate": "2024-08-03T08:45:00Z"
+  },
+  {
+    "productName": "Gentle Facial Cleanser",
+    "image": "https://via.placeholder.com/150",
+    "description": "A gentle cleanser that removes dirt and impurities without stripping the skin.",
+    "price": 20.00,
+    "category": "Skincare",
+    "ratings": 4.2,
+    "creationDate": "2024-08-04T14:30:00Z"
+  },
+  {
+    "productName": "Rejuvenating Night Cream",
+    "image": "https://via.placeholder.com/150",
+    "description": "A night cream that rejuvenates skin while you sleep.",
+    "price": 35.00,
+    "category": "Skincare",
+    "ratings": 4.7,
+    "creationDate": "2024-08-05T17:00:00Z"
+  },
+  {
+    "productName": "Nourishing Shampoo",
+    "image": "https://via.placeholder.com/150",
+    "description": "A shampoo that nourishes and strengthens hair.",
+    "price": 15.99,
+    "category": "Haircare",
+    "ratings": 4.4,
+    "creationDate": "2024-08-06T12:10:00Z"
+  },
+  {
+    "productName": "Volumizing Conditioner",
+    "image": "https://via.placeholder.com/150",
+    "description": "A conditioner that adds volume and shine to hair.",
+    "price": 18.00,
+    "category": "Haircare",
+    "ratings": 4.6,
+    "creationDate": "2024-08-07T15:35:00Z"
+  },
+  {
+    "productName": "Hair Repair Mask",
+    "image": "https://via.placeholder.com/150",
+    "description": "A deep-conditioning mask that repairs damaged hair.",
+    "price": 22.50,
+    "category": "Haircare",
+    "ratings": 4.8,
+    "creationDate": "2024-08-08T10:20:00Z"
+  },
+  {
+    "productName": "Heat Protectant Spray",
+    "image": "https://via.placeholder.com/150",
+    "description": "A spray that protects hair from heat damage caused by styling tools.",
+    "price": 14.99,
+    "category": "Haircare",
+    "ratings": 4.3,
+    "creationDate": "2024-08-09T13:40:00Z"
+  },
+  {
+    "productName": "Anti-Frizz Serum",
+    "image": "https://via.placeholder.com/150",
+    "description": "A serum that tames frizz and smooths hair.",
+    "price": 19.99,
+    "category": "Haircare",
+    "ratings": 4.7,
+    "creationDate": "2024-08-10T11:15:00Z"
+  },
+  {
+    "productName": "Long-Wear Foundation",
+    "image": "https://via.placeholder.com/150",
+    "description": "A long-lasting foundation that provides full coverage.",
+    "price": 32.00,
+    "category": "Makeup",
+    "ratings": 4.5,
+    "creationDate": "2024-08-11T09:50:00Z"
+  },
+  {
+    "productName": "Volumizing Mascara",
+    "image": "https://via.placeholder.com/150",
+    "description": "A mascara that adds volume and length to lashes.",
+    "price": 20.00,
+    "category": "Makeup",
+    "ratings": 4.6,
+    "creationDate": "2024-08-12T14:00:00Z"
+  },
+  {
+    "productName": "Matte Lipstick",
+    "image": "https://via.placeholder.com/150",
+    "description": "A matte lipstick that provides intense color and long wear.",
+    "price": 18.00,
+    "category": "Makeup",
+    "ratings": 4.4,
+    "creationDate": "2024-08-13T16:45:00Z"
+  },
+  {
+    "productName": "Shimmering Highlighter",
+    "image": "https://via.placeholder.com/150",
+    "description": "A highlighter that adds a luminous glow to the skin.",
+    "price": 25.00,
+    "category": "Makeup",
+    "ratings": 4.7,
+    "creationDate": "2024-08-14T10:30:00Z"
+  },
+  {
+    "productName": "Waterproof Eyeliner",
+    "image": "https://via.placeholder.com/150",
+    "description": "A waterproof eyeliner that stays put all day.",
+    "price": 15.00,
+    "category": "Makeup",
+    "ratings": 4.3,
+    "creationDate": "2024-08-15T09:15:00Z"
+  },
+  {
+    "productName": "Exfoliating Body Scrub",
+    "image": "https://via.placeholder.com/150",
+    "description": "A body scrub that exfoliates and smooths skin.",
+    "price": 18.99,
+    "category": "Bodycare",
+    "ratings": 4.5,
+    "creationDate": "2024-08-01T11:00:00Z"
+  },
+  {
+    "productName": "Hydrating Body Lotion",
+    "image": "https://via.placeholder.com/150",
+    "description": "A lotion that hydrates and nourishes the skin.",
+    "price": 22.00,
+    "category": "Bodycare",
+    "ratings": 4.7,
+    "creationDate": "2024-08-02T14:20:00Z"
+  },
+  {
+    "productName": "Firming Body Cream",
+    "image": "https://via.placeholder.com/150",
+    "description": "A cream that firms and tones the skin.",
+    "price": 30.00,
+    "category": "Bodycare",
+    "ratings": 4.6,
+    "creationDate": "2024-08-03T12:45:00Z"
+  },
+  {
+    "productName": "Soothing Body Wash",
+    "image": "https://via.placeholder.com/150",
+    "description": "A body wash that cleanses and soothes sensitive skin.",
+    "price": 12.00,
+    "category": "Bodycare",
+    "ratings": 4.4,
+    "creationDate": "2024-08-04T16:10:00Z"
+  },
+  {
+    "productName": "Refreshing Body Mist",
+    "image": "https://via.placeholder.com/150",
+    "description": "A body mist that leaves a refreshing scent on the skin.",
+    "price": 16.00,
+    "category": "Bodycare",
+    "ratings": 4.5,
+    "creationDate": "2024-08-05T09:50:00Z"
+  },
+  {
+    "productName": "Floral Perfume",
+    "image": "https://via.placeholder.com/150",
+    "description": "A perfume with a blend of floral notes.",
+    "price": 50.00,
+    "category": "Fragrance",
+    "ratings": 4.7,
+    "creationDate": "2024-08-06T14:30:00Z"
+  },
+  {
+    "productName": "Citrus Body Spray",
+    "image": "https://via.placeholder.com/150",
+    "description": "A body spray with a refreshing citrus scent.",
+    "price": 20.00,
+    "category": "Fragrance",
+    "ratings": 4.4,
+    "creationDate": "2024-08-07T11:15:00Z"
+  },
+  {
+    "productName": "Woody Eau de Toilette",
+    "image": "https://via.placeholder.com/150",
+    "description": "A woody fragrance",
+    "price": 45.00,
+    "category": "Fragrance",
+    "ratings": 4.6,
+    "creationDate": "2024-08-08T18:30:00Z"
+  },
+  {
+    "productName": "Vanilla Musk Perfume",
+    "image": "https://via.placeholder.com/150",
+    "description": "A warm fragrance with notes of vanilla and musk.",
+    "price": 35.00,
+    "category": "Fragrance",
+    "ratings": 4.7,
+    "creationDate": "2024-08-09T10:00:00Z"
+  },
+  {
+    "productName": "Sunscreen SPF 50",
+    "image": "https://via.placeholder.com/150",
+    "description": "A lightweight, broad-spectrum sunscreen with SPF 50.",
+    "price": 28.00,
+    "category": "Skincare",
+    "ratings": 4.6,
+    "creationDate": "2024-08-10T08:45:00Z"
+  },
+  {
+    "productName": "Hydrating Sheet Mask",
+    "image": "https://via.placeholder.com/150",
+    "description": "A sheet mask that deeply hydrates and revitalizes the skin.",
+    "price": 8.00,
+    "category": "Skincare",
+    "ratings": 4.7,
+    "creationDate": "2024-08-11T14:20:00Z"
+  },
+  {
+    "productName": "Curl Defining Cream",
+    "image": "https://via.placeholder.com/150",
+    "description": "A cream that defines and enhances natural curls.",
+    "price": 17.99,
+    "category": "Haircare",
+    "ratings": 4.5,
+    "creationDate": "2024-08-12T09:30:00Z"
+  },
+  {
+    "productName": "Dry Shampoo Spray",
+    "image": "https://via.placeholder.com/150",
+    "description": "A spray that refreshes hair and absorbs excess oil without water.",
+    "price": 12.00,
+    "category": "Haircare",
+    "ratings": 4.4,
+    "creationDate": "2024-08-13T07:45:00Z"
+  },
+  {
+    "productName": "Color Protect Shampoo",
+    "image": "https://via.placeholder.com/150",
+    "description": "A shampoo that protects and preserves color-treated hair.",
+    "price": 19.99,
+    "category": "Haircare",
+    "ratings": 4.6,
+    "creationDate": "2024-08-14T13:55:00Z"
+  },
+  {
+    "productName": "BB Cream",
+    "image": "https://via.placeholder.com/150",
+    "description": "A multi-purpose BB cream that moisturizes and provides light coverage.",
+    "price": 24.00,
+    "category": "Makeup",
+    "ratings": 4.3,
+    "creationDate": "2024-08-15T11:10:00Z"
+  },
+  {
+    "productName": "Blush Palette",
+    "image": "https://via.placeholder.com/150",
+    "description": "A palette with a variety of blush shades for a natural flush of color.",
+    "price": 29.99,
+    "category": "Makeup",
+    "ratings": 4.7,
+    "creationDate": "2024-08-16T15:40:00Z"
+  },
+  {
+    "productName": "Brow Gel",
+    "image": "https://via.placeholder.com/150",
+    "description": "A clear brow gel that shapes and holds brows in place.",
+    "price": 15.00,
+    "category": "Makeup",
+    "ratings": 4.5,
+    "creationDate": "2024-08-17T09:00:00Z"
+  },
+  {
+    "productName": "Concealer Stick",
+    "image": "https://via.placeholder.com/150",
+    "description": "A creamy concealer stick that covers blemishes and dark circles.",
+    "price": 20.00,
+    "category": "Makeup",
+    "ratings": 4.6,
+    "creationDate": "2024-08-18T13:30:00Z"
+  },
+  {
+    "productName": "Setting Spray",
+    "image": "https://via.placeholder.com/150",
+    "description": "A setting spray that locks in makeup for all-day wear.",
+    "price": 18.00,
+    "category": "Makeup",
+    "ratings": 4.7,
+    "creationDate": "2024-08-19T16:15:00Z"
+  },
+  {
+    "productName": "Moisturizing Hand Cream",
+    "image": "https://via.placeholder.com/150",
+    "description": "A rich hand cream that hydrates and softens hands.",
+    "price": 12.00,
+    "category": "Bodycare",
+    "ratings": 4.8,
+    "creationDate": "2024-08-20T10:20:00Z"
+  },
+  {
+    "productName": "Relaxing Bath Oil",
+    "image": "https://via.placeholder.com/150",
+    "description": "A bath oil that soothes and relaxes tired muscles.",
+    "price": 25.00,
+    "category": "Bodycare",
+    "ratings": 4.6,
+    "creationDate": "2024-08-21T11:50:00Z"
+  },
+  {
+    "productName": "Antibacterial Body Wash",
+    "image": "https://via.placeholder.com/150",
+    "description": "A body wash that cleanses and protects against bacteria.",
+    "price": 14.99,
+    "category": "Bodycare",
+    "ratings": 4.5,
+    "creationDate": "2024-08-22T08:45:00Z"
+  },
+  {
+    "productName": "Amber Wood Eau de Parfum",
+    "image": "https://via.placeholder.com/150",
+    "description": "A rich and warm fragrance with amber and wood notes.",
+    "price": 55.00,
+    "category": "Fragrance",
+    "ratings": 4.7,
+    "creationDate": "2024-08-23T17:00:00Z"
+  },
+  {
+    "productName": "Lavender Vanilla Candle",
+    "image": "https://via.placeholder.com/150",
+    "description": "A candle that combines soothing lavender with sweet vanilla.",
+    "price": 20.00,
+    "category": "Fragrance",
+    "ratings": 4.6,
+    "creationDate": "2024-08-24T09:30:00Z"
+  }
+]
