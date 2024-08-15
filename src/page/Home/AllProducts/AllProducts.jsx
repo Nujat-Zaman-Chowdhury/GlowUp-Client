@@ -5,6 +5,7 @@ import axios from "axios";
 
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
+  const [loading,setLoading] = useState(true);
   const [count, setCount] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(9);
   const [currentPage, setCurrentPage] = useState(1);
@@ -64,16 +65,19 @@ const AllProducts = () => {
 
         <div className="w-full flex justify-between">
             {/* search bar */}
-          <form class="flex flex-col md:flex-row gap-3"  onSubmit={handleSearch}>
-            <div class="flex">
+          <form className="flex flex-col md:flex-row gap-3"  onSubmit={handleSearch}>
+            <div className="flex">
               <input
+              name="search"
+              onChange={(e)=>setSearchText(e.target.value)}
+              value={searchText}
                 type="text"
                 placeholder="Search product name"
-                class="w-full md:w-80 px-3 h-10 rounded-l border-2 border-[#aeffde] focus:outline-none focus:border-[#aeffde]"
+                className="w-full md:w-80 px-3 h-10 rounded-l border-2 border-[#aeffde] focus:outline-none focus:border-[#aeffde]"
               />
               <button
-                type="submit"
-                class="bg-[#2e302f] text-white rounded-r px-2 md:px-3 py-0 md:py-1"
+                
+                className="bg-[#2e302f] text-white rounded-r px-2 md:px-3 py-0 md:py-1"
               >
                 Search
               </button>
@@ -81,13 +85,13 @@ const AllProducts = () => {
           </form>
 
           {/* sort by */}
-          <select id="pricingType" name="pricingType"
-		class="w-[100px] h-10 border-2 border-[#aeffde] focus:outline-none focus:border-[#aeffde] text-[#222] rounded px-2 md:px-3 py-0 md:py-1 tracking-wider">
+          {/* <select id="pricingType" name="pricingType"
+		className="w-[100px] h-10 border-2 border-[#aeffde] focus:outline-none focus:border-[#aeffde] text-[#222] rounded px-2 md:px-3 py-0 md:py-1 tracking-wider">
 		<option value="All" selected="">All</option>
 		<option value="Freemium">Freemium</option>
 		<option value="Free">Free</option>
 		<option value="Paid">Paid</option>
-	</select>
+	</select> */}
         </div>
         <div className="grid grid-cols-3 gap-3">
           {products.map((product) => (
