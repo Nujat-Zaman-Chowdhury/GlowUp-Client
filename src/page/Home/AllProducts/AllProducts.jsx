@@ -5,13 +5,22 @@ import axios from "axios";
 
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
-  const [loading,setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [count, setCount] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(9);
   const [currentPage, setCurrentPage] = useState(1);
-
+    
+//   search
   const [search, setSearch] = useState("");
   const [searchText, setSearchText] = useState("");
+
+// sorting
+const [sortType, setSortType] = useState("");
+
+const handleSortChange = (e) => {
+  setSortType(e.target.value);
+};
+
 
   const numberOfPages = Math.ceil(count / itemsPerPage);
 
@@ -20,20 +29,20 @@ const AllProducts = () => {
       const { data } = await axios(
         `${
           import.meta.env.VITE_API_URL
-        }/all-products?page=${currentPage}&size=${itemsPerPage}&search=${search}`,
+        }/all-products?page=${currentPage}&size=${itemsPerPage}&search=${search}&sort=${sortType}`,
         { withCredentials: true }
       );
 
       setProducts(data);
     };
     getData();
-  }, [currentPage, itemsPerPage, search]);
+  }, [currentPage, itemsPerPage, search,sortType]);
 
   // get count
   useEffect(() => {
     const getCount = async () => {
       const { data } = await axios(
-        `${import.meta.env.VITE_API_URL}/products-count?&search=${search}`,
+        `${import.meta.env.VITE_API_URL}/products-count?&search=${search}&sort=${sortType}`,
         { withCredentials: true }
       );
       setCount(data.count);
@@ -41,7 +50,7 @@ const AllProducts = () => {
     };
 
     getCount();
-  }, [search]);
+  }, [search,sortType]);
   // console.log(count);
 
   const pages = [...Array(numberOfPages).keys()].map((element) => element + 1);
@@ -62,36 +71,39 @@ const AllProducts = () => {
       <Sidebar />
 
       <div>
-
         <div className="w-full flex justify-between">
-            {/* search bar */}
-          <form className="flex flex-col md:flex-row gap-3"  onSubmit={handleSearch}>
+          {/* search bar */}
+          <form
+            className="flex flex-col md:flex-row gap-3"
+            onSubmit={handleSearch}
+          >
             <div className="flex">
               <input
-              name="search"
-              onChange={(e)=>setSearchText(e.target.value)}
-              value={searchText}
+                name="search"
+                onChange={(e) => setSearchText(e.target.value)}
+                value={searchText}
                 type="text"
                 placeholder="Search product name"
                 className="w-full md:w-80 px-3 h-10 rounded-l border-2 border-[#aeffde] focus:outline-none focus:border-[#aeffde]"
               />
-              <button
-                
-                className="bg-[#2e302f] text-white rounded-r px-2 md:px-3 py-0 md:py-1"
-              >
+              <button className="bg-[#2e302f] text-white rounded-r px-2 md:px-3 py-0 md:py-1">
                 Search
               </button>
             </div>
           </form>
 
           {/* sort by */}
-          {/* <select id="pricingType" name="pricingType"
-		className="w-[100px] h-10 border-2 border-[#aeffde] focus:outline-none focus:border-[#aeffde] text-[#222] rounded px-2 md:px-3 py-0 md:py-1 tracking-wider">
-		<option value="All" selected="">All</option>
-		<option value="Freemium">Freemium</option>
-		<option value="Free">Free</option>
-		<option value="Paid">Paid</option>
-	</select> */}
+          <select
+            id="sortingType"
+            name="sortingType"
+            onChange={handleSortChange} 
+            className="w-[200px] h-10 border-2 border-[#aeffde] focus:outline-none focus:border-[#aeffde] text-[#222] rounded px-2 md:px-3 py-0 md:py-1 tracking-wider"
+          >
+            <option value="">All</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="newest">Newest First</option>
+          </select>
         </div>
         <div className="grid grid-cols-3 gap-3">
           {products.map((product) => (
