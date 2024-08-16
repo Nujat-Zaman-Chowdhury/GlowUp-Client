@@ -71,7 +71,7 @@ const handleSortChange = (e) => {
     setSearch(searchText);
   };
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <span className="loading loading-ball loading-md flex justify-center items-center my-10 mx-auto"></span>
   return (
     <div className="container mx-auto flex flex-col lg:flex-row gap-6">
       {/* sidebar */}

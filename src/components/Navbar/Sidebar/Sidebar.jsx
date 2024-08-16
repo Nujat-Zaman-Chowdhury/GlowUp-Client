@@ -30,6 +30,16 @@ const Sidebar = ({ setBrandFilter, setCategoryFilter, setPriceFilter }) => {
                     <option value="HairEssence">HairEssence</option>
                     <option value="SunShield">SunShield</option>
                     <option value="RepairPro">RepairPro</option>
+                    <option value="PureTone">PureTone</option>
+                    <option value="FlawlessBase">FlawlessBase</option>
+                    <option value="SunShield">SunShield</option>
+                    <option value="ColorStay">ColorStay</option>
+                    <option value="StayLine">StayLine</option>
+                    <option value="SmoothSkin">SmoothSkin</option>
+                    <option value="MoistureMax">MoistureMax</option>
+                    <option value="CalmWash">CalmWash</option>
+                    <option value="RefreshMist">RefreshMist</option>
+                    <option value="GlowUp">GlowUp</option>
                 </select>
             </div>
 
