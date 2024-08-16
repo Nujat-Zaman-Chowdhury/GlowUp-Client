@@ -51,7 +51,7 @@ const Sidebar = ({ setBrandFilter, setCategoryFilter, setPriceFilter }) => {
                 <select 
                 onChange={handlePriceChange}
                  className="w-full h-10  rounded-md">
-                    <option value="">Prince</option>
+                    <option value="">Price</option>
                     <option value="0-50">$0 - $50</option>
                     <option value="51-100">$51 - $100</option>
                     <option value="101-200">$101 - $200</option>

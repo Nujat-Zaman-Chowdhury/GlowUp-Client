@@ -82,7 +82,7 @@ const handleSortChange = (e) => {
       />
 
       <div>
-        <div className="w-full flex justify-between">
+        <div className="w-full flex justify-between gap-10">
           {/* search bar */}
           <form
             className="flex flex-col md:flex-row gap-3"
@@ -127,7 +127,8 @@ const handleSortChange = (e) => {
         </div>
         }
         {/* pagination */}
-        <div className="my-12 flex justify-center items-center">
+        {
+          products.length>0 && <div className="my-12 flex justify-center items-center">
           {/* prev button */}
           <button
             disabled={currentPage === 1}
@@ -158,6 +159,8 @@ const handleSortChange = (e) => {
             next
           </button>
         </div>
+
+        }
       </div>
     </div>
   );
