@@ -22,6 +22,11 @@ const handleSortChange = (e) => {
 };
 
 
+  // Filters
+  const [brandFilter, setBrandFilter] = useState("");
+  const [categoryFilter, setCategoryFilter] = useState("");
+  const [priceFilter, setPriceFilter] = useState("");
+
   const numberOfPages = Math.ceil(count / itemsPerPage);
 
   useEffect(() => {
@@ -29,20 +34,20 @@ const handleSortChange = (e) => {
       const { data } = await axios(
         `${
           import.meta.env.VITE_API_URL
-        }/all-products?page=${currentPage}&size=${itemsPerPage}&search=${search}&sort=${sortType}`,
+        }/all-products?page=${currentPage}&size=${itemsPerPage}&search=${search}&sort=${sortType}&brand=${brandFilter}&category=${categoryFilter}&price=${priceFilter}`,
         { withCredentials: true }
       );
 
       setProducts(data);
     };
     getData();
-  }, [currentPage, itemsPerPage, search,sortType]);
+  }, [currentPage, itemsPerPage, search,sortType,brandFilter, categoryFilter, priceFilter]);
 
   // get count
   useEffect(() => {
     const getCount = async () => {
       const { data } = await axios(
-        `${import.meta.env.VITE_API_URL}/products-count?&search=${search}&sort=${sortType}`,
+        `${import.meta.env.VITE_API_URL}/products-count?&search=${search}&sort=${sortType}&brand=${brandFilter}&category=${categoryFilter}&price=${priceFilter}`,
         { withCredentials: true }
       );
       setCount(data.count);
@@ -50,7 +55,7 @@ const handleSortChange = (e) => {
     };
 
     getCount();
-  }, [search,sortType]);
+  }, [search,sortType,brandFilter, categoryFilter, priceFilter]);
   // console.log(count);
 
   const pages = [...Array(numberOfPages).keys()].map((element) => element + 1);
@@ -65,10 +70,16 @@ const handleSortChange = (e) => {
     e.preventDefault();
     setSearch(searchText);
   };
+
+  if (loading) return <p>Loading...</p>
   return (
     <div className="container mx-auto flex gap-6">
       {/* sidebar */}
-      <Sidebar />
+      <Sidebar 
+      setBrandFilter={setBrandFilter} 
+      setCategoryFilter={setCategoryFilter} 
+      setPriceFilter={setPriceFilter} 
+      />
 
       <div>
         <div className="w-full flex justify-between">
@@ -105,11 +116,16 @@ const handleSortChange = (e) => {
             <option value="newest">Newest First</option>
           </select>
         </div>
-        <div className="grid grid-cols-3 gap-3">
+        {
+          products.length==0?
+          <p className="flex justify-center items-center my-20">No product found</p>
+          :
+          <div className="grid grid-cols-3 gap-3 mt-6">
           {products.map((product) => (
             <ProductCard key={product._id} product={product} />
           ))}
         </div>
+        }
         {/* pagination */}
         <div className="my-12 flex justify-center items-center">
           {/* prev button */}
