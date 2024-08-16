@@ -30,7 +30,7 @@ const ProductCard = ({product}) => {
 
                 <div className="p-2">
                     <div className="flex justify-between">
-                        <h5 className="mb-2 text-sm font-bold leading-tight text-neutral-800">
+                        <h5 className="mb-2 text-sm font-bold leading-tight text-[#b657a6]">
                             {productName}
                         </h5>
                         <h5 className="mb-2 text-sm font-bold leading-tight text-neutral-800 flex">
@@ -40,21 +40,21 @@ const ProductCard = ({product}) => {
                             </svg>
                         </h5>
                     </div>
-                    <p className="mb-1 text-sm text-neutral-600">
-                        Brand: {brandName}
+                    <p className="mb-1 text-sm text-neutral-900">
+                        Brand: <span>{brandName}</span>
                     </p>
-                    <p className="mb-1 text-sm text-neutral-600">
-                        Category: {category}
+                    <p className="mb-1 text-sm text-neutral-900">
+                        Category: <span>{category}</span>
                     </p>
-                    <p className="mb-1 text-sm text-neutral-600">
-                        {description}
+                    <p className="mb-1 text-sm text-neutral-900">
+                        <span>{description}</span>
                     </p>
 
-                    <p className="mb-4 text-base text-neutral-600">
-                        Date: {formattedDate}
+                    <p className="mb-4 text-base text-neutral-900">
+                        Date: <span>{formattedDate}</span>
                     </p>
                     <h5 className="mb-2 text-sm font-bold leading-tight text-neutral-800">
-                        Price: <span>{price}</span>
+                        Price: <span className='text-lg'>৳ {price}</span>
                     </h5>
                 </div>
             </div>
