@@ -13,10 +13,10 @@ const Sidebar = ({ setBrandFilter, setCategoryFilter, setPriceFilter }) => {
         setPriceFilter(e.target.value);
     };
     return (
-        <aside className="w-[25%] h-400px md:h-screen bg-[#ecf0ee] shadow-md rounded">
-                <h3 className="text-2xl my-3 text-center uppercase">Filter By</h3>
+        <aside className="w-full lg:w-[25%] h-400px lg:h-screen bg-[#ecf0ee] shadow-md rounded flex flex-col md:flex-row lg:flex-col gap-2 lg:gap-0">
+                <h3 className="text-lg lg:text-2xl my-3 text-center uppercase">Filter By</h3>
 
-                <div className="my-6 bg-white shadow-md w-[90%] mx-auto">
+                <div className="my-3 md:my-6 bg-white shadow-md w-[80%] md:w-[27%] lg:w-[90%] mx-auto ">
                 <select 
                 
                 onChange={handleBrandChange} 
@@ -25,7 +25,7 @@ const Sidebar = ({ setBrandFilter, setCategoryFilter, setPriceFilter }) => {
                     <option value="GlowSkin">GlowSkin</option>
                     <option value="YouthRevive">YouthRevive</option>
                     <option value="RadiantEyes">RadiantEyes</option>
-                    <option value="PureGlow">PureGlow</option>
+                    <option value="PureGlow">PureGlow</option> 
                     <option value="DreamSkin">DreamSkin</option>
                     <option value="HairEssence">HairEssence</option>
                     <option value="SunShield">SunShield</option>
@@ -33,7 +33,7 @@ const Sidebar = ({ setBrandFilter, setCategoryFilter, setPriceFilter }) => {
                 </select>
             </div>
 
-            <div className="my-6 bg-white shadow-md w-[90%] mx-auto">
+            <div className="my-3 md:my-6 bg-white shadow-md w-[80%] md:w-[27%] lg:w-[90%] mx-auto">
                 <select 
                 onChange={handleCategoryChange}
                  className="w-full h-10  rounded-md">
@@ -47,7 +47,7 @@ const Sidebar = ({ setBrandFilter, setCategoryFilter, setPriceFilter }) => {
                 </select>
             </div>
 
-            <div className="my-6 bg-white shadow-md w-[90%] mx-auto">
+            <div className="my-3 md:my-6 bg-white shadow-md w-[80%] md:w-[27%] lg:w-[90%] mx-auto">
                 <select 
                 onChange={handlePriceChange}
                  className="w-full h-10  rounded-md">

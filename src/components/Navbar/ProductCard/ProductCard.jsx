@@ -19,7 +19,7 @@ const ProductCard = ({product}) => {
   const formattedDate = formatDate(creationDate);      
     return (
         
-            <div className="block rounded-lg bg-white w-72">
+            <div className="block rounded-lg bg-white w-full md:w-72">
                 <div className="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
                     <img className="rounded-lg sm:m-h-64 md:h-64 w-full" src={image} alt="" />
                     <a href="#">

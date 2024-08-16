@@ -73,7 +73,7 @@ const handleSortChange = (e) => {
 
   if (loading) return <p>Loading...</p>
   return (
-    <div className="container mx-auto flex gap-6">
+    <div className="container mx-auto flex flex-col lg:flex-row gap-6">
       {/* sidebar */}
       <Sidebar 
       setBrandFilter={setBrandFilter} 
@@ -81,8 +81,8 @@ const handleSortChange = (e) => {
       setPriceFilter={setPriceFilter} 
       />
 
-      <div>
-        <div className="w-full flex justify-between gap-10">
+      <div className="p-4 md:p-2 lg:p-0">
+        <div className="w-full flex flex-col md:flex-row md:justify-between gap-10">
           {/* search bar */}
           <form
             className="flex flex-col md:flex-row gap-3"
@@ -108,7 +108,7 @@ const handleSortChange = (e) => {
             id="sortingType"
             name="sortingType"
             onChange={handleSortChange} 
-            className="w-[200px] h-10 border-2 border-[#aeffde] focus:outline-none focus:border-[#aeffde] text-[#222] rounded px-2 md:px-3 py-0 md:py-1 tracking-wider"
+            className="w-full md:w-[200px] h-10 border-2 border-[#aeffde] focus:outline-none focus:border-[#aeffde] text-[#222] rounded px-2 md:px-3 py-0 md:py-1 tracking-wider"
           >
             <option value="">All</option>
             <option value="price-asc">Price: Low to High</option>
@@ -120,7 +120,7 @@ const handleSortChange = (e) => {
           products.length==0?
           <p className="flex justify-center items-center my-20">No product found</p>
           :
-          <div className="grid grid-cols-3 gap-3 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-6">
           {products.map((product) => (
             <ProductCard key={product._id} product={product} />
           ))}
